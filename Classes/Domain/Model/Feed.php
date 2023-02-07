@@ -24,6 +24,8 @@ class Feed extends AbstractEntity
 
     protected string $username = '';
 
+    protected bool $showLiveData = false;
+
     /**
      * @var int
      */
@@ -112,5 +114,23 @@ class Feed extends AbstractEntity
         $this->posts = $posts;
 
         return $this;
+    }
+
+    /**
+     * @param bool $showLiveData
+     * @return Feed
+     */
+    public function setShowLiveData(bool $showLiveData): Feed
+    {
+        $this->showLiveData = $showLiveData;
+        return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isShowLiveData(): bool
+    {
+        return $this->showLiveData;
     }
 }

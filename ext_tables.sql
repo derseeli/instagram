@@ -12,6 +12,7 @@ CREATE TABLE tx_instagram_domain_model_feed
 	user_id    varchar(255) DEFAULT NULL,
 	username   varchar(255) DEFAULT NULL,
 	posts      int(11) DEFAULT '0' NOT NULL,
+	show_live_data      int(1) DEFAULT '0' NOT NULL,
 
 	PRIMARY KEY (uid),
 	KEY        parent (pid)

@@ -25,7 +25,7 @@ return [
     'interface' => [],
     'types' => [
         '1' => [
-            'showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, token, username, user_id, expires_at, token_type, posts, --div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.access, starttime, endtime',
+            'showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, token, username, user_id, expires_at, token_type, posts, show_live_data, --div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.access, starttime, endtime',
         ],
     ],
     'palettes' => [
@@ -165,7 +165,14 @@ return [
                 'foreign_table' => 'tx_instagram_domain_model_post',
                 'foreign_field' => 'feed',
             ],
+        ],
 
+        'show_live_data' => [
+            'exclude' => 1,
+            'label' => 'LLL:EXT:instagram/Resources/Private/Language/locallang_db.xlf:tx_instagram_domain_model_feed.show_live_data',
+            'config' => [
+                'type' => 'check',
+            ],
         ],
     ],
 ];

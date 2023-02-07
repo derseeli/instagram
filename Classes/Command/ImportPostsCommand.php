@@ -97,6 +97,10 @@ class ImportPostsCommand extends Command
             return Command::FAILURE;
         }
 
+        if($feed->isShowLiveData()) {
+            return Command::SUCCESS;
+        }
+
         $apiClient = $this->apiClientFactory->create($feed);
 
         $posts = $apiClient->getPosts((int)$limit, $since, $until);

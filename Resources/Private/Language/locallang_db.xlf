@@ -54,6 +54,9 @@
             <trans-unit id="tx_instagram_domain_model_feed.posts">
 				<source>Posts</source>
 			</trans-unit>
+			<trans-unit id="tx_instagram_domain_model_feed.show_live_data">
+				<source>Show live data</source>
+			</trans-unit>
 
             <trans-unit id="instagram">
                 <source>Instagram Token Generator</source>
