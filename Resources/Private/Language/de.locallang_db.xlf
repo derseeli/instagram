@@ -43,6 +43,10 @@
                 <source>Instagram Token Generator</source>
                 <target>Instagram Token Generator</target>
             </trans-unit>
+			<trans-unit id="tx_instagram_domain_model_feed.show_live_data">
+				<source>Show live data</source>
+				<target>Zeige Daten live an</target>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>
